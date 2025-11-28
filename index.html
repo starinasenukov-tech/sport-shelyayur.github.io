@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- SEO Meta Tags -->
-<meta name="description" content="Спорткомплекс Щельяюр - бесплатные спортивные залы, тренажерный зал, волейбол, футбол, теннис, бильярд. Республика Коми, Ижемский район.">
-<meta name="keywords" content="спорткомплекс Щельяюр, спорт Щельяюр, тренажерный зал, волейбол, футбол, теннис, бильярд, бесплатный спорт, Ижемский район">
-<meta name="author" content="МБУ Межпоселенческий спортивный комплекс в поселке Щельяюр">
-
-<!-- Open Graph для соцсетей -->
-<meta property="og:title" content="Щельяюр Спортивный - Официальный сайт">
-<meta property="og:description" content="Бесплатный спортивный комплекс в поселке Щельяюр. Тренажерный зал, волейбол, футбол, теннис, бильярд.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ваш-сайт.ru">
-
-<!-- Для Яндекс.Вебмастер -->
-<meta name="yandex-verification" content="ваш-код-верификации">
-
-<!-- Для Google Search Console -->
-<meta name="google-site-verification" content="ваш-код-верификации">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Щельяюр Спортивный - Официальный сайт</title>
@@ -31,19 +15,13 @@
                 <h2>Щельяюр Спортивный</h2>
             </div>
             <ul class="nav-menu">
-    <li><a href="#about">О комплексе</a></li>
-    <li><a href="#services">Залы</a></li>
-    <li><a href="#schedule">Расписание</a></li>
-    <li><a href="#staff">Сотрудники</a></li>
-    <li><a href="#news">Новости</a></li>
-    <li><a href="#contacts">Контакты</a></li>
-    <li id="adminLoginItem">
-        <button id="adminLoginBtn" class="btn-admin">🔐 Вход для директора</button>
-    </li>
-    <li id="logoutItem" style="display: none;">
-        <button id="logoutBtn" class="btn-admin btn-logout">🚪 Выйти</button>
-    </li>
-</ul>
+                <li><a href="#about">О комплексе</a></li>
+                <li><a href="#services">Залы</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#staff">Сотрудники</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -56,29 +34,27 @@
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="hero-text-content">
-                <h1 class="hero-title">
-                    <span class="title-main">Щельяюр Спортивный</span>
-                    <span class="title-sub">Межпоселенческий спортивный комплекс</span>
-                </h1>
-                <p class="hero-description">Спорт для всех — бесплатно</p>
-                <div class="hero-buttons">
-                    <a href="#schedule" class="btn btn-3d btn-primary">Расписание</a>
-                    <a href="#contacts" class="btn btn-3d btn-secondary">Контакты</a>
-                </div>
+            <h1 class="hero-title">
+                <span class="title-main">Щельяюр Спортивный</span>
+                <span class="title-sub">Межпоселенческий спортивный комплекс</span>
+            </h1>
+            <p class="hero-description">Спорт для всех — бесплатно</p>
+            <div class="hero-buttons">
+                <a href="#schedule" class="btn btn-primary">Расписание</a>
+                <a href="#contacts" class="btn btn-secondary">Контакты</a>
             </div>
         </div>
 
-        <!-- Спортивные иконки как декоративные элементы -->
-        <div class="sport-icons">
-            <div class="sport-icon">⚽</div>
-            <div class="sport-icon">🏀</div>
-            <div class="sport-icon">🎾</div>
-            <div class="sport-icon">🏐</div>
-            <div class="sport-icon">🏓</div>
-            <div class="sport-icon">🎯</div>
-            <div class="sport-icon">🏸</div>
-            <div class="sport-icon">🥊</div>
+        <!-- Декоративные элементы -->
+        <div class="decorations">
+            <div class="decoration ball-1">⚽</div>
+            <div class="decoration ball-2">🏐</div>
+            <div class="decoration weight-1">🏋️</div>
+            <div class="decoration racket">🎾</div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
@@ -99,7 +75,7 @@
                             </div>
                         </div>
                         <div class="feature">
-                            <div class="feature-icon">✅</div>
+                            <div class="feature-icon">🎯</div>
                             <div class="feature-text">
                                 <h3>Бесплатно</h3>
                                 <p>Все услуги предоставляются бесплатно</p>
@@ -109,7 +85,7 @@
                             <div class="feature-icon">👥</div>
                             <div class="feature-text">
                                 <h3>Для всех</h3>
-                                <p>Спорт доступен каждому</p>
+                                <p>Спорт доступен каждому жителю</p>
                             </div>
                         </div>
                     </div>
@@ -123,22 +99,22 @@
         <div class="container">
             <h2 class="section-title">Наши залы</h2>
             <div class="services-grid">
-                <div class="service-card" data-hall="billiard">
+                <div class="service-card" data-hall="billiard" onclick="showHallDetails('billiard')">
                     <div class="card-icon">🎱</div>
                     <h3>Бильярдная комната</h3>
                     <p>Профессиональные бильярдные столы для любителей интеллектуального спорта</p>
                 </div>
-                <div class="service-card" data-hall="tennis">
+                <div class="service-card" data-hall="tennis" onclick="showHallDetails('tennis')">
                     <div class="card-icon">🎾</div>
                     <h3>Теннисный зал</h3>
                     <p>Современное покрытие и оборудование для игры в настольный теннис</p>
                 </div>
-                <div class="service-card" data-hall="volleyball">
+                <div class="service-card" data-hall="volleyball" onclick="showHallDetails('volleyball')">
                     <div class="card-icon">⚽</div>
                     <h3>Волейбольно-футбольный зал</h3>
                     <p>Универсальный зал для игровых видов спорта с разметкой для волейбола и мини-футбола</p>
                 </div>
-                <div class="service-card" data-hall="gym">
+                <div class="service-card" data-hall="gym" onclick="showHallDetails('gym')">
                     <div class="card-icon">🏋️</div>
                     <h3>Тренажерный зал</h3>
                     <p>Современные тренажеры и свободные веса для силовых тренировок</p>
@@ -147,73 +123,13 @@
         </div>
     </section>
 
-    <!-- Staff Section -->
-    <section id="staff" class="staff">
-        <div class="container">
-            <h2 class="section-title">Сотрудники</h2>
-
-            <!-- Форма добавления/редактирования сотрудников (только для директора) -->
-            <div class="staff-form admin-only" id="staffForm">
-                <h3 id="staffFormTitle">Добавить сотрудника</h3>
-                <form id="addStaffForm">
-                    <input type="hidden" id="staffId">
-                    <div class="form-row">
-                        <input type="text" id="staffLastName" placeholder="Фамилия" required>
-                        <input type="text" id="staffFirstName" placeholder="Имя" required>
-                        <input type="text" id="staffMiddleName" placeholder="Отчество" required>
-                    </div>
-                    <input type="text" id="staffPosition" placeholder="Должность" required>
-                    <textarea id="staffDescription" placeholder="Описание обязанностей"></textarea>
-                    <input type="file" id="staffPhoto" accept="image/*">
-                    <label for="staffPhoto" class="file-label">Фотография сотрудника (необязательно)</label>
-                    <div class="form-buttons">
-                        <button type="submit" class="btn btn-primary" id="staffSubmitBtn">Добавить сотрудника</button>
-                        <button type="button" id="cancelEditBtn" class="btn btn-secondary" style="display: none;">Отмена</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Список сотрудников -->
-            <div class="staff-grid" id="staffContainer">
-                <!-- Сотрудники будут добавляться через JavaScript -->
-            </div>
-        </div>
-    </section>
-
     <!-- Hall Details Modal -->
     <div id="hallModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" onclick="closeAllModals()">&times;</span>
             <div id="hallContent"></div>
         </div>
     </div>
-
-    <!-- News Section -->
-    <section id="news" class="news">
-        <div class="container">
-            <h2 class="section-title">Новости</h2>
-
-            <!-- Форма добавления новостей (только для директора) -->
-            <div class="news-form admin-only" id="newsForm">
-                <h3>Добавить новость</h3>
-                <form id="addNewsForm">
-                    <input type="text" id="newsTitle" placeholder="Заголовок новости" required>
-                    <textarea id="newsText" placeholder="Текст новости" required></textarea>
-                    <input type="text" id="newsDate" placeholder="Дата (например, 15.12.2024)" required>
-                    <input type="file" id="newsImage" accept="image/*">
-                    <label for="newsImage" class="file-label">Выберите изображение (необязательно)</label>
-                    <div class="form-buttons">
-                        <button type="submit" class="btn btn-primary">Добавить новость</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Список новостей -->
-            <div class="news-grid" id="newsContainer">
-                <!-- Новости будут добавляться через JavaScript -->
-            </div>
-        </div>
-    </section>
 
     <!-- Schedule Section -->
     <section id="schedule" class="schedule">
@@ -256,6 +172,60 @@
             <div class="schedule-note">
                 <p>📋 <strong>Все залы работают по единому расписанию</strong></p>
                 <p>Бильярдная, теннисный зал, волейбольно-футбольный зал и тренажерный зал доступны в указанные часы</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title">Новости</h2>
+
+            <!-- Форма добавления новостей (только для директора) -->
+            <div class="admin-panel" id="newsAdminPanel" style="display: none;">
+                <div class="admin-form">
+                    <h3>Добавить новость</h3>
+                    <form id="addNewsForm">
+                        <input type="text" id="newsTitle" placeholder="Заголовок новости" required>
+                        <textarea id="newsText" placeholder="Текст новости" required></textarea>
+                        <input type="text" id="newsDate" placeholder="Дата (например, 15.12.2024)" required>
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Добавить новость</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Список новостей -->
+            <div class="news-grid" id="newsContainer">
+                <!-- Новости будут добавляться через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section id="staff" class="staff">
+        <div class="container">
+            <h2 class="section-title">Наши сотрудники</h2>
+
+            <!-- Форма управления сотрудниками (только для директора) -->
+            <div class="admin-panel" id="staffAdminPanel" style="display: none;">
+                <div class="admin-form">
+                    <h3>Управление сотрудниками</h3>
+                    <form id="addStaffForm">
+                        <input type="text" id="staffName" placeholder="ФИО сотрудника" required>
+                        <input type="text" id="staffPosition" placeholder="Должность" required>
+                        <textarea id="staffDescription" placeholder="Описание/обязанности"></textarea>
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Добавить сотрудника</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Список сотрудников -->
+            <div class="staff-grid" id="staffContainer">
+                <!-- Сотрудники будут добавляться через JavaScript -->
             </div>
         </div>
     </section>
@@ -321,24 +291,12 @@
                     <p>МБУ "Межпоселенческий спортивный комплекс в поселке Щельяюр"</p>
                 </div>
                 <div class="footer-info">
-                    <p>&copy; 2024 Все права защищены</p>
+                    <p>&copy; 2025 Все права защищены</p>
                     <p>Спорт для всех — бесплатно</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Модальное окно входа -->
-    <div id="loginModal" class="modal">
-        <div class="modal-content login-modal">
-            <span class="close">&times;</span>
-            <h3>Вход для директора</h3>
-            <form id="loginForm">
-                <input type="password" id="adminPassword" placeholder="Введите пароль" required>
-                <button type="submit" class="btn btn-primary">Войти</button>
-            </form>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
