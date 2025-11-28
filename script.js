@@ -734,3 +734,24 @@ window.addEventListener('scroll', () => {
 console.log('Скрипт загружен успешно!');
 
 console.log('Пароль для входа:', DIRECTOR_PASSWORD);
+
+// Слушаем изменения в localStorage (для синхронизации между вкладками)
+window.addEventListener('storage', function(e) {
+    if (e.key === 'sportComplexNews') {
+        loadNews(); // Перезагружаем новости при изменении в другой вкладке
+    }
+});
+
+// Функция для принудительного обновления всех вкладок
+function refreshNews() {
+    // Сохраняем текущее время в localStorage
+    localStorage.setItem('newsLastUpdate', Date.now());
+    loadNews();
+}
+
+// Слушаем собственные обновления
+window.addEventListener('storage', function(e) {
+    if (e.key === 'newsLastUpdate') {
+        loadNews();
+    }
+});
