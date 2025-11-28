@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- SEO Meta Tags -->
+<meta name="description" content="Спорткомплекс Щельяюр - бесплатные спортивные залы, тренажерный зал, волейбол, футбол, теннис, бильярд. Республика Коми, Ижемский район.">
+<meta name="keywords" content="спорткомплекс Щельяюр, спорт Щельяюр, тренажерный зал, волейбол, футбол, теннис, бильярд, бесплатный спорт, Ижемский район">
+<meta name="author" content="МБУ Межпоселенческий спортивный комплекс в поселке Щельяюр">
+
+<!-- Open Graph для соцсетей -->
+<meta property="og:title" content="Щельяюр Спортивный - Официальный сайт">
+<meta property="og:description" content="Бесплатный спортивный комплекс в поселке Щельяюр. Тренажерный зал, волейбол, футбол, теннис, бильярд.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ваш-сайт.ru">
+
+<!-- Для Яндекс.Вебмастер -->
+<meta name="yandex-verification" content="ваш-код-верификации">
+
+<!-- Для Google Search Console -->
+<meta name="google-site-verification" content="ваш-код-верификации">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Щельяюр Спортивный - Официальный сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h2>Щельяюр Спортивный</h2>
+            </div>
+            <ul class="nav-menu">
+    <li><a href="#about">О комплексе</a></li>
+    <li><a href="#services">Залы</a></li>
+    <li><a href="#schedule">Расписание</a></li>
+    <li><a href="#staff">Сотрудники</a></li>
+    <li><a href="#news">Новости</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+    <li id="adminLoginItem">
+        <button id="adminLoginBtn" class="btn-admin">🔐 Вход для директора</button>
+    </li>
+    <li id="logoutItem" style="display: none;">
+        <button id="logoutBtn" class="btn-admin btn-logout">🚪 Выйти</button>
+    </li>
+</ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text-content">
+                <h1 class="hero-title">
+                    <span class="title-main">Щельяюр Спортивный</span>
+                    <span class="title-sub">Межпоселенческий спортивный комплекс</span>
+                </h1>
+                <p class="hero-description">Спорт для всех — бесплатно</p>
+                <div class="hero-buttons">
+                    <a href="#schedule" class="btn btn-3d btn-primary">Расписание</a>
+                    <a href="#contacts" class="btn btn-3d btn-secondary">Контакты</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Спортивные иконки как декоративные элементы -->
+        <div class="sport-icons">
+            <div class="sport-icon">⚽</div>
+            <div class="sport-icon">🏀</div>
+            <div class="sport-icon">🎾</div>
+            <div class="sport-icon">🏐</div>
+            <div class="sport-icon">🏓</div>
+            <div class="sport-icon">🎯</div>
+            <div class="sport-icon">🏸</div>
+            <div class="sport-icon">🥊</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О комплексе</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">Добро пожаловать на официальный сайт нашего спортивного комплекса!</p>
+                    <p>Под руководством директора <strong>Рочева Олега Витальевича</strong> мы создаем все условия для того, чтобы каждый житель поселка Щельяюр и Ижемского района имел возможность заниматься спортом бесплатно.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">🏢</div>
+                            <div class="feature-text">
+                                <h3>МБУ</h3>
+                                <p>Муниципальное бюджетное учреждение</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✅</div>
+                            <div class="feature-text">
+                                <h3>Бесплатно</h3>
+                                <p>Все услуги предоставляются бесплатно</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">👥</div>
+                            <div class="feature-text">
+                                <h3>Для всех</h3>
+                                <p>Спорт доступен каждому</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Наши залы</h2>
+            <div class="services-grid">
+                <div class="service-card" data-hall="billiard">
+                    <div class="card-icon">🎱</div>
+                    <h3>Бильярдная комната</h3>
+                    <p>Профессиональные бильярдные столы для любителей интеллектуального спорта</p>
+                </div>
+                <div class="service-card" data-hall="tennis">
+                    <div class="card-icon">🎾</div>
+                    <h3>Теннисный зал</h3>
+                    <p>Современное покрытие и оборудование для игры в настольный теннис</p>
+                </div>
+                <div class="service-card" data-hall="volleyball">
+                    <div class="card-icon">⚽</div>
+                    <h3>Волейбольно-футбольный зал</h3>
+                    <p>Универсальный зал для игровых видов спорта с разметкой для волейбола и мини-футбола</p>
+                </div>
+                <div class="service-card" data-hall="gym">
+                    <div class="card-icon">🏋️</div>
+                    <h3>Тренажерный зал</h3>
+                    <p>Современные тренажеры и свободные веса для силовых тренировок</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section id="staff" class="staff">
+        <div class="container">
+            <h2 class="section-title">Сотрудники</h2>
+
+            <!-- Форма добавления/редактирования сотрудников (только для директора) -->
+            <div class="staff-form admin-only" id="staffForm">
+                <h3 id="staffFormTitle">Добавить сотрудника</h3>
+                <form id="addStaffForm">
+                    <input type="hidden" id="staffId">
+                    <div class="form-row">
+                        <input type="text" id="staffLastName" placeholder="Фамилия" required>
+                        <input type="text" id="staffFirstName" placeholder="Имя" required>
+                        <input type="text" id="staffMiddleName" placeholder="Отчество" required>
+                    </div>
+                    <input type="text" id="staffPosition" placeholder="Должность" required>
+                    <textarea id="staffDescription" placeholder="Описание обязанностей"></textarea>
+                    <input type="file" id="staffPhoto" accept="image/*">
+                    <label for="staffPhoto" class="file-label">Фотография сотрудника (необязательно)</label>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-primary" id="staffSubmitBtn">Добавить сотрудника</button>
+                        <button type="button" id="cancelEditBtn" class="btn btn-secondary" style="display: none;">Отмена</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Список сотрудников -->
+            <div class="staff-grid" id="staffContainer">
+                <!-- Сотрудники будут добавляться через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Hall Details Modal -->
+    <div id="hallModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="hallContent"></div>
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title">Новости</h2>
+
+            <!-- Форма добавления новостей (только для директора) -->
+            <div class="news-form admin-only" id="newsForm">
+                <h3>Добавить новость</h3>
+                <form id="addNewsForm">
+                    <input type="text" id="newsTitle" placeholder="Заголовок новости" required>
+                    <textarea id="newsText" placeholder="Текст новости" required></textarea>
+                    <input type="text" id="newsDate" placeholder="Дата (например, 15.12.2024)" required>
+                    <input type="file" id="newsImage" accept="image/*">
+                    <label for="newsImage" class="file-label">Выберите изображение (необязательно)</label>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-primary">Добавить новость</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Список новостей -->
+            <div class="news-grid" id="newsContainer">
+                <!-- Новости будут добавляться через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2 class="section-title">Режим работы</h2>
+            <div class="schedule-table">
+                <div class="table-header">
+                    <div>День недели</div>
+                    <div>Время работы</div>
+                </div>
+                <div class="table-row">
+                    <div>Понедельник</div>
+                    <div>08:00 – 21:00</div>
+                </div>
+                <div class="table-row">
+                    <div>Вторник</div>
+                    <div>08:00 – 21:00</div>
+                </div>
+                <div class="table-row">
+                    <div>Среда</div>
+                    <div>08:00 – 21:00</div>
+                </div>
+                <div class="table-row">
+                    <div>Четверг</div>
+                    <div>08:00 – 21:00</div>
+                </div>
+                <div class="table-row">
+                    <div>Пятница</div>
+                    <div>08:00 – 21:00</div>
+                </div>
+                <div class="table-row">
+                    <div>Суббота</div>
+                    <div>10:00 – 13:00</div>
+                </div>
+                <div class="table-row">
+                    <div>Воскресенье</div>
+                    <div>09:00 – 15:00</div>
+                </div>
+            </div>
+            <div class="schedule-note">
+                <p>📋 <strong>Все залы работают по единому расписанию</strong></p>
+                <p>Бильярдная, теннисный зал, волейбольно-футбольный зал и тренажерный зал доступны в указанные часы</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h3>Адрес</h3>
+                            <p>Республика Коми, Ижемский район,<br>п. Щельяюр, ул. Гагарина, д.51</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <h3>Телефон</h3>
+                            <p>8 (82140) 91-6-58</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>rochev.1978@mail.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">👤</div>
+                        <div class="contact-text">
+                            <h3>Директор</h3>
+                            <p>Рочев Олег Витальевич</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <a href="https://yandex.ru/maps/-/CLGwNKiz" target="_blank" rel="noopener noreferrer">
+                        <img src="https://static-maps.yandex.ru/1.x/?ll=53.359107,65.295321&size=600,400&z=16&l=map&pt=53.359107,65.295321,pm2blm"
+                             alt="Спорткомплекс Щельяюр, ул. Гагарина, д.51"
+                             style="width: 100%; height: 400px; border-radius: 10px; object-fit: cover;">
+                    </a>
+                    <p style="text-align: center; margin-top: 10px; color: #666;">
+                        <a href="https://yandex.ru/maps/-/CLGwNKiz" target="_blank" rel="noopener noreferrer"
+                           style="color: #007BFF; text-decoration: none; font-weight: 500;">
+                            📍 Открыть в Яндекс.Картах
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Щельяюр Спортивный</h3>
+                    <p>МБУ "Межпоселенческий спортивный комплекс в поселке Щельяюр"</p>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2024 Все права защищены</p>
+                    <p>Спорт для всех — бесплатно</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content login-modal">
+            <span class="close">&times;</span>
+            <h3>Вход для директора</h3>
+            <form id="loginForm">
+                <input type="password" id="adminPassword" placeholder="Введите пароль" required>
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
