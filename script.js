@@ -1,5 +1,5 @@
 // Пароль директора
-const DIRECTOR_PASSWORD = "1978";
+const DIRECTOR_PASSWORD = "Sport1978";
 let isDirectorLoggedIn = false;
 
 // Данные о залах
@@ -732,4 +732,5 @@ window.addEventListener('scroll', () => {
 
 // Отладочная информация
 console.log('Скрипт загружен успешно!');
+
 console.log('Пароль для входа:', DIRECTOR_PASSWORD);
